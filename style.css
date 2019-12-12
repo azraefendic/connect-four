@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    background-image: url("assets/img/background.jpeg");
+    position: relative;
+    z-index: 1;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hole {
+    transform: translate(-30px, -30px);
+    width: 80px;
+    height: 80px;
+    border: 40px midnightblue solid;
+    border-image: linear-gradient(red, blue) 27 / 35px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 60px;
+    opacity: 0.7;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#message {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+
+.color1 {
+    text-shadow: 5px 5px 5px #6cdae7;
+}
+
+.color2 {
+    text-shadow: 5px 5px 5px #fd0e35;
+}
+
+.player1 {
+    background-image: radial-gradient(circle, white, #6cdae7, blue);
+}
+
+.player2 {
+    background-image: radial-gradient(circle, white, #fd0e35, red);
+}
+
+#lightsaber1 {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    height: 500px;
+    transform: rotate(-18deg);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+#lightsaber2 {
+    position: relative;
+    top: 60px;
+    left: -350px;
+    transform: rotate(-3deg);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.animation {
+    transform: rotate(-2deg) !important;
+}
+.animation2 {
+    transform: rotate(-16deg) !important;
+}
+
+#lightsaber2 img {
+    width: 370px;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+#popup {
+    background-image: url("assets/img/space.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    font-size: 40px;
+    color: black;
+    height: 60%;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.popup1 {
+    background-image: url("assets/img/space.jpeg");
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 45px;
+    color: aliceblue;
+    height: 60%;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    border-radius: 10px;
+    padding: 5px;
+    transition-property: transform;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+
+#player1 {
+    text-shadow: 5px 5px 5px #6cdae7;
+}
+
+#player2 {
+    text-shadow: 5px 5px 5px #fd0e35;
+}
+
+#start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#start img {
+    height: 165px;
+}
+
+#buttonStart {
+    background-image: url("assets/img/newgame.png");
+    background-color: aliceblue;
+    background-size: contain;
+    color: black;
+    align-self: center;
+    height: 30%;
+    width: 30%;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px white;
+    font-weight: bold;
+    border: 3px darkred solid;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.overlay1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.6;
+    visibility: hidden;
+}
+
+.on {
+    visibility: visible;
+}
+
+.off {
+    visibility: hidden;
+}
+
+button {
+    background-image: url("assets/img/newgame.png");
+    background-size: contain;
+    background-color: aliceblue;
+    color: black;
+    text-shadow: 5px 5px 5px white;
+    align-self: center;
+    height: 30%;
+    width: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    border: 3px darkred solid;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
